@@ -11,7 +11,8 @@ void main() => {
               useMaterial3: true),
           home: Scaffold(
               appBar: AppBar(
-                title: Text('Spacey!'),
+                toolbarTextStyle: TextField.materialMisspelledTextStyle,
+                title: Image.asset('lib/assets/planet.avif'),
               ),
               body: layout),
         ),
