@@ -18,7 +18,7 @@ class MyContainer extends StatelessWidget {
         ),
         home: Scaffold(
             appBar: AppBar(centerTitle: false, title: box),
-            body: BodyContainer()));
+            body: const BodyContainer()));
   }
 }
 
