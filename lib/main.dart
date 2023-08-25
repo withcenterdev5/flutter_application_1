@@ -1,18 +1,29 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/second_built/body_section.dart';
+import 'package:flutter_application_1/second_built/first_section.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MyContainer());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class MyContainer extends StatelessWidget {
+  const MyContainer({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Second app',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          colorScheme: ColorScheme.dark(),
+        ),
         home: Scaffold(
-            appBar: AppBar(title: const Text('Second app!')),
-            body: Placeholder()));
+            appBar: AppBar(centerTitle: false, title: box),
+            body: BodyContainer()));
   }
 }
+
+//menu, facebook, || add, search, messenger
+
+
+
+
