@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 ConstrainedBox box = ConstrainedBox(
     constraints: const BoxConstraints(
-      maxWidth: 400.0,
+      maxWidth: 450.0,
     ),
     child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -10,26 +10,26 @@ ConstrainedBox box = ConstrainedBox(
 
 ConstrainedBox leftSide = ConstrainedBox(
     constraints: const BoxConstraints(
-      maxWidth: 140.0,
+      maxWidth: 120.0,
     ),
     child: const Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
-        Icon(Icons.menu),
-        Text('facebook', style: TextStyle(fontSize: 20.0))
+        Icon(Icons.menu, color: Colors.black,),
+        Text('facebook', style: TextStyle(fontSize: 20.0, color: Colors.black))
       ],
     ));
 
 ConstrainedBox rightSide = ConstrainedBox(
   constraints: const BoxConstraints(
-    maxWidth: 100.0,
+    maxWidth: 92.0,
   ),
   child: const Row(
     mainAxisAlignment: MainAxisAlignment.spaceAround,
     children: [
-      Icon(Icons.add_a_photo_rounded),
-      Icon(Icons.search),
-      Icon(Icons.messenger_rounded)
+      Icon(Icons.add_a_photo_rounded, color: Colors.black),
+      Icon(Icons.search, color: Colors.black),
+      Icon(Icons.messenger_rounded, color: Colors.black)
     ],
   ),
 );
