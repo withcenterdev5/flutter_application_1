@@ -18,6 +18,18 @@ class BodyContainer extends StatelessWidget {
                userLikeCount:  Text('4'),
                userName:  Text('Planet'),
                userStatus:  Text('Hello, I am planet your godfather thank you', textAlign: TextAlign.left,),       
+          ),
+          const UsersFeed( 
+              userFeedAvatar: AssetImage('lib/assets/planet1.avif'),
+              userLikeCount: Text('1'),
+              userName: Text('Planet1'),
+              userStatus: Text('Im a cool planet!', textAlign: TextAlign.left),
+          ),
+          const UsersFeed( 
+              userFeedAvatar: AssetImage('lib/assets/planet2.avif'),
+              userLikeCount: Text('2'),
+              userName: Text('Planet2'),
+              userStatus: Text('AAlllieeens!!'), 
           )
         ],
       ),

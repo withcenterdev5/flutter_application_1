@@ -40,6 +40,7 @@ class UsersFeed extends StatelessWidget {
       child: Card( 
         child: Container(
           padding: const EdgeInsets.all(10.0),
+          width: 200.0,
           height: 200.0,
           child: Column( 
             mainAxisAlignment: MainAxisAlignment.spaceAround,
