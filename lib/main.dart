@@ -13,12 +13,9 @@ class MyContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          colorScheme: ColorScheme.dark(),
-        ),
         home: Scaffold(
-            appBar: AppBar(centerTitle: false, title: box),
-            body: const BodyContainer()));
+            appBar: AppBar(centerTitle: false, title: box, backgroundColor: Colors.white,),
+            body: const BodyContainer(), backgroundColor: const Color.fromARGB(255, 226, 228, 228),));
   }
 }
 
